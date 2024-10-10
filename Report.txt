@@ -1,0 +1,74 @@
+1. 
+The Snake Game is implemented in Java using the JavaFX library for the graphical user interface. The game consists of a snake that moves on a grid, eating food to grow longer while avoiding collisions with itself and the game window boundaries.
+
+2.
+ SnakeApp Class:
+Responsibility:
+
+Acts as the main class for the application.
+Manages game initialization, menus, and scene transitions.
+Attributes:
+
+Constants for window size, block size, and frames per second (FPS).
+Fonts and colors for UI.
+Current score, and player name.
+High scores stored in an ArrayList of ScoreEntry objects.
+File references for fonts and high scores.
+Methods:
+
+start: Initializes the game and displays the main menu.
+displayMainMenu: Shows the main menu with buttons for starting the game, setting the player name and viewing high scores.
+startGame: Initiates the main game loop and initializes the snake and food entities.
+changeDifficulty: Modifies the game difficulty.
+displayHighScores: Shows the high scores screen.
+displayEndScreen: Displays the end screen with the final score, retry, and menu options.
+renderScore: Renders the current score during gameplay.
+Snake Class:
+Responsibility:
+
+Represents the snake entity in the game.
+Handles movement, collision detection, and rendering.
+Attributes:
+
+Position, speed, and state variables.
+Colors for the snake, tail, and dead state.
+ArrayList for storing tail segments.
+Extra length and current score.
+Methods:
+
+eatFood: Handles food consumption, increases the score, and updates the speed.
+isDead: Checks for collisions with the tail or game boundaries.
+setSpeed: Changes the snake's direction.
+update: Updates the position and tail.
+render: Renders the snake on the canvas.
+Food Class:
+Responsibility:
+
+Represents the food entity in the game.
+Manages food position, rendering, and randomization.
+Attributes:
+
+Position and color.
+Methods:
+
+randomLocation: Places the food at a random location without overlapping the snake.
+render: Renders the food on the canvas.
+ScoreEntry Class:
+Responsibility:
+
+Represents a player's score entry.
+Manages player name, score, and label for UI display.
+Attributes:
+
+Player name, score, and associated label.
+Methods:
+
+buildLabel: Creates a label for UI display.
+SnakeTailSegment Class:
+Responsibility:
+Represents a segment of the snake's tail.
+Attributes:
+Position coordinates.
+
+
+
